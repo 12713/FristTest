@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+</head>
+<style>
+	#content{
+		width: 1220px;
+		height: 610px;
+		background-color: darkkhaki;
+		margin-left: 120px;
+		border-radius: 4px;
+	}
+	
+</style>
+
+	<script type="text/javascript" src="js/canvas-particle.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/style.js"></script>
+<body style="background-color:#45163E;">
+	<script type="text/javascript">
+		window.onload = function(){
+			var config = {
+				vx: 5,//速度
+				vy:  5,
+				height: 2,//点大小
+				width: 2,
+				count: 100,
+				color: "27,247,255",//点颜色
+				stroke: "27,247,255",//线颜色
+				dist: 7000,//距离
+				e_dist: 20000,
+				max_conn: 20
+			}
+			CanvasParticle(config);
+		}
+	</script>
+<ul class="drawer">
+	  <li>
+	    <a href="javascript:void(0)" onclick="turnTo(a)">
+	      <i class="fa fa-info-circle"></i>
+	      <span>新书速递</span>
+	    </a>
+	    <ul>
+	      <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-folder-open"></i>
+	          <span>小瑞是个大傻逼</span>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-question-circle"></i>
+	          <span>杨柳不知道<span>
+	        </a>
+	      </li>
+		  <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-question-circle"></i>
+	          <span>购书投票<span>
+	        </a>
+	      </li>
+	    </ul>
+	  </li>
+	  <li>
+	    <a href="#">
+	      <i class="fa fa-folder"></i>
+	      <span>蒙蒙是个娘炮，哈哈哈</span>
+	    </a>
+	    <ul>
+	      <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-flash"></i>
+	          <span>盛鑫开花结果</span>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-ellipsis-h"></i>
+	          <span>龚明乃嫖客一枚</span>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-dot-circle-o"></i>
+	          <span>自然科学</span>
+	        </a>
+	      </li>
+	    </ul>
+	  </li>
+	  <li>
+	    <a href="#">
+	      <i class="fa fa-share-alt"></i>
+	      <span>新闻公告</span>
+	    </a>
+	    <ul>
+	      <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-codepen"></i>
+	          <span>最新公告</span>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-twitter"></i>
+	          <span>投诉建议</span>
+	        </a>
+	      </li>
+	    </ul>
+	  </li>
+	  <li>
+	    <a href="#">
+	      <i class="fa fa-info-circle"></i>
+	      <span>个人信息</span>
+	    </a>
+	    <ul>
+	      <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-folder-open"></i>
+	          <span>借阅历史</span>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-question-circle"></i>
+	          <span>违规记录</span>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" target="_blank">
+	          <i class="fa fa-phone-square"></i>
+	          <span>账号修改</span>
+	        </a>
+	      </li>
+	    </ul>
+	  </li>
+	</ul>	
+</body>
+</html>

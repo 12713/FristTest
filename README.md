@@ -1,4 +1,3 @@
-# FristTest
-to know how gitHub does work
-this is the remote repository flag.
-<br>this is second change 
+﻿# FristTest
+use chrome open 215_GO.html,you will see you want see
+
