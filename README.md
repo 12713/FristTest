@@ -1,3 +1,4 @@
 # FristTest
 to know how gitHub does work
-sdgfkjahsdjkfhakjsdhf
+this is the remote repository flag.
+
