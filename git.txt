@@ -6,8 +6,8 @@
                       git remote add origin 仓库的地址(URL)
 3.若不需要更改仓库,将文件夹加入到本地仓库中    
 		      git add 文件夹名
-4.提交到本地仓库      git commit -m "写上此次上传的行为 "
-5.推到GitHup仓库上    git push origin master 
+4.提交到本地仓库      git commit -m "写上此次上传的行为 "         m：代表message
+5.推到GitHup仓库上    git push origin master 
 git clone 
 ls 查看当前库中文件
 git init 初始化为一个仓库
