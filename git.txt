@@ -1,0 +1,25 @@
+1.将需要上传到GitHub上的文件夹或文件拷贝到此文件下。
+2.在此文件下右键进入GitBash。
+3.若需要更改关联的仓库,首先更改，然后关联需要上传的仓库
+                      git remote rm origin
+                      git remote add origin 仓库的地址(URL)
+3.若不需要更改仓库,将文件夹加入到本地仓库中    
+		      git add 文件夹名
+4.提交到本地仓库      git commit -m "写上此次上传的行为 "
+5.推到GitHup仓库上    git push origin master 
+
+git clone 
+ls 查看当前库中文件
+git init 初始化为一个仓库
+
+git status 查看与远程是否同步 查看当前状态
+git branch 查看当前分支
+git branch -a 查看远程库分支情况
+git branch --set-upstream develop origin/develop 关联远程分支 必须同名
+git log 查看日志
+git checkout 分支名  切换分支
+git branch 分支名 创建本地分支
+git push origin 新分支名 新建远程分支
+git branch -vv  显示所在分支最新提交内容
+git branch -m 分支名  更改分支名
+git branch -d 分支名  删除分支
