@@ -1,3 +1,4 @@
+.LOG
 1.将需要上传到GitHub上的文件夹或文件拷贝到此文件下。
 2.在此文件下右键进入GitBash。
 3.若需要更改关联的仓库,首先更改，然后关联需要上传的仓库
@@ -7,7 +8,6 @@
 		      git add 文件夹名
 4.提交到本地仓库      git commit -m "写上此次上传的行为 "
 5.推到GitHup仓库上    git push origin master 
-
 git clone 
 ls 查看当前库中文件
 git init 初始化为一个仓库
@@ -23,3 +23,28 @@ git push origin 新分支名 新建远程分支
 git branch -vv  显示所在分支最新提交内容
 git branch -m 分支名  更改分支名
 git branch -d 分支名  删除分支
+git fetch 查看当前远程分支版本情况
+git log -p develop..origin/develop 比较本地develop分支和远程develop差别---输入q自动退出git log
+git merge origin/develop 将远程分支与本地分支合并（更改本地分支）
+-----------------------------------------------------------------------
+Git中从远程的分支获取最新的版本到本地有这样2个命令：
+1. git fetch：相当于是从远程获取最新版本到本地，不会自动merge
+git fetch origin master
+git log -p master..origin/master
+git merge origin/master
+以上命令的含义：
+首先从远程的origin的master主分支下载最新的版本到origin/master分支上
+然后比较本地的master分支和origin/master分支的差别
+最后进行合并
+上述过程其实可以用以下更清晰的方式来进行：
+git fetch origin master:tmp
+git diff tmp
+git merge tmp
+从远程获取最新的版本到本地的test分支上
+之后再进行比较合并
+2. git pull：相当于是从远程获取最新版本并merge到本地
+git pull origin master
+上述命令其实相当于git fetch 和 git merge
+在实际使用中，git fetch更安全一些
+因为在merge前，我们可以查看更新情况，然后再决定是否合并
+------------------------------------------------------------------------
