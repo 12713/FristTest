@@ -14,7 +14,8 @@ git init 初始化为一个仓库
 
 git status 查看与远程是否同步 查看当前状态
 git branch 查看当前分支
-git branch -a 查看远程库分支情况
+git branch -a 查看所有分支
+git branch -r 查看远程分支
 git branch --set-upstream develop origin/develop 关联远程分支 必须同名
 git log 查看日志
 git checkout 分支名  切换分支
